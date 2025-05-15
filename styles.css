@@ -1,0 +1,430 @@
+:root {
+    --primary-color: #0A1428;
+    --secondary-color: #091428;
+    --accent-color: #C89B3C;
+    --highlight-color: #F0E6D2;
+    --text-color: #F0E6D2;
+    --dark-accent: #463714;
+    --role-bg: rgba(10, 20, 40, 0.8);
+    --gold-gradient: linear-gradient(to right, #C89B3C, #F0E6D2, #C89B3C);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 20, 40, 0.85);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--highlight-color);
+    text-shadow: 0 0 10px rgba(200, 155, 60, 0.5);
+    letter-spacing: 2px;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.tab-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-btn:hover {
+    background-color: var(--dark-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tab-btn.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Role Tier List Styles */
+.role-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.role-section {
+    background-color: var(--role-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.role-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.role-header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.role-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--highlight-color);
+    letter-spacing: 1px;
+}
+
+.champions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.champion {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.champion:hover {
+    transform: translateY(-5px);
+}
+
+.champion-top-3 {
+    position: relative;
+}
+
+.champion-top-3::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.champion-1::before {
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+}
+
+.champion-2::before {
+    border: 2px solid silver;
+    box-shadow: 0 0 10px silver;
+}
+
+.champion-3::before {
+    border: 2px solid #cd7f32;
+    box-shadow: 0 0 10px #cd7f32;
+}
+
+.champion-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    margin: 0 auto 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.champion-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.champion:hover .champion-img img {
+    transform: scale(1.1);
+}
+
+.champion-rank {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.champion-1 .champion-rank {
+    background-color: gold;
+    color: var(--primary-color);
+}
+
+.champion-2 .champion-rank {
+    background-color: silver;
+    color: var(--primary-color);
+}
+
+.champion-3 .champion-rank {
+    background-color: #cd7f32;
+    color: var(--primary-color);
+}
+
+.champion-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 5px;
+    color: var(--highlight-color);
+}
+
+/* Comp Tier List Styles */
+.comp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comp-item {
+    background-color: var(--role-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.comp-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.comp-rank {
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.comp-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--highlight-color);
+}
+
+.comp-team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.comp-role {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comp-role-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.comp-champion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comp-champion-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.comp-champion-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comp-champion-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--highlight-color);
+}
+
+.comp-alternates {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--accent-color);
+}
+
+.comp-alternates-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.comp-alternates-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .role-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .role-header img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .champions {
+        justify-content: center;
+    }
+    
+    .comp-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comp-role {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .comp-alternates-list {
+        justify-content: center;
+    }
+} 
