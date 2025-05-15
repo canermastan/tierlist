@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'Nami', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nami.png', rank: 2 },
             { name: 'Braum', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Braum.png', rank: 3 },
             { name: 'Nautilus', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nautilus.png', rank: 4 },
-            { name: 'Lux', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Lux.png', rank: 5 },
+            { name: 'Elise', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Elise.png', rank: 5 },
             { name: 'Leona', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Leona.png', rank: 6 },
             { name: 'Thresh', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Thresh.png', rank: 7 }
         ]
