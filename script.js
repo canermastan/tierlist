@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         jungle: [
             { name: 'Viego', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Viego.png', rank: 1 },
             { name: 'Lee Sin', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/LeeSin.png', rank: 2 },
-            { name: 'Kayn', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Kayn.png', rank: 3 },
-            { name: 'Nocturne', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nocturne.png', rank: 4 },
+            { name: 'Nocturne', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nocturne.png', rank: 3 },
+            { name: 'Kayn', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Kayn.png', rank: 4 },
             { name: 'Jarvan IV', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/JarvanIV.png', rank: 5 },
             { name: 'Naafiri', image: 'https://leagueofitems.com/images/champions/tiles/256/950.webp', rank: 6 },
             { name: 'Xin Zhao', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/XinZhao.png', rank: 7 }
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'Sylas', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Sylas.png', rank: 2 },
             { name: 'Zoe', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Zoe.png', rank: 3 },
             { name: 'Akali', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Akali.png', rank: 4 },
-            { name: 'Viktor', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Viktor.png', rank: 5 },
-            { name: 'Yasuo', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Yasuo.png', rank: 6 },
+            { name: 'Vex', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Vex.png', rank: 5 },
+            { name: 'Viktor', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Viktor.png', rank: 6 },
             { name: 'Yone', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Yone.png', rank: 7 }
         ],
         adc: [
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         support: [
             { name: 'Lulu', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Lulu.png', rank: 1 },
             { name: 'Nami', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nami.png', rank: 2 },
-            { name: 'Braum', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Braum.png', rank: 3 },
-            { name: 'Nautilus', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nautilus.png', rank: 4 },
+            { name: 'Nautilus', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Nautilus.png', rank: 3 },
+            { name: 'Braum', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Braum.png', rank: 4 },
             { name: 'Elise', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Elise.png', rank: 5 },
             { name: 'Leona', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Leona.png', rank: 6 },
             { name: 'Thresh', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Thresh.png', rank: 7 }
