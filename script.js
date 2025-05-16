@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'Yone', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Yone.png', rank: 7 }
         ],
         adc: [
-            { name: 'Jhin', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Jhin.png', rank: 1 },
-            { name: 'Lucian', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Lucian.png', rank: 2 },
-            { name: 'Caitlyn', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Caitlyn.png', rank: 3 },
-            { name: 'Kai\'Sa', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Kaisa.png', rank: 4 },
+            { name: 'Lucian', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Lucian.png', rank: 1 },
+            { name: 'Jhin', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Jhin.png', rank: 2 },
+            { name: 'Miss Fortune', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/MissFortune.png', rank: 3 },
+            { name: 'Jinx', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Jinx.png', rank: 4 },
             { name: 'Ezreal', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Ezreal.png', rank: 5 },
-            { name: 'Miss Fortune', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/MissFortune.png', rank: 6 },
-            { name: 'Jinx', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Jinx.png', rank: 7 }
+            { name: 'Tristana', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Tristana.png', rank: 6 },
+            { name: 'Caitlyn', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Caitlyn.png', rank: 7 },
         ],
         support: [
             { name: 'Lulu', image: 'https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/Lulu.png', rank: 1 },
